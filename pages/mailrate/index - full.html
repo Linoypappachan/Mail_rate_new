@@ -1,0 +1,858 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>EPG - Mail Rate Calculator</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="../../plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Wait Me Css -->
+    <link href="../../plugins/waitme/waitMe.css" rel="stylesheet" />
+
+    <!-- Sweetalert Css -->
+    <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-indigo">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-indigo">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="../../index.html">MAIL RATES - NEW DESIGN</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                    <img src="../../images/user.png" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designer</div>
+                    <div class="email">jojy.alex@epg.gov.ae</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+
+                    </div>
+                </div>
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active">
+                        <a href="../../mailrates.html">
+                            <i class="material-icons">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+
+
+
+
+
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2018
+                    <a href="javascript:void(0);">EPG - Material Design</a>.
+                </div>
+                <div class="version">
+                    <b>Version: </b> 1.0.5
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#skins" data-toggle="tab">SKINS</a>
+                </li>
+                <li role="presentation">
+                    <a href="#settings" data-toggle="tab">SETTINGS</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red" class="active">
+                            <div class="red"></div>
+                            <span>Red</span>
+                        </li>
+                        <li data-theme="pink">
+                            <div class="pink"></div>
+                            <span>Pink</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div>
+                            <span>Purple</span>
+                        </li>
+                        <li data-theme="deep-purple">
+                            <div class="deep-purple"></div>
+                            <span>Deep Purple</span>
+                        </li>
+                        <li data-theme="indigo">
+                            <div class="indigo"></div>
+                            <span>Indigo</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div>
+                            <span>Blue</span>
+                        </li>
+                        <li data-theme="light-blue">
+                            <div class="light-blue"></div>
+                            <span>Light Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div>
+                            <span>Cyan</span>
+                        </li>
+                        <li data-theme="teal">
+                            <div class="teal"></div>
+                            <span>Teal</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div>
+                            <span>Green</span>
+                        </li>
+                        <li data-theme="light-green">
+                            <div class="light-green"></div>
+                            <span>Light Green</span>
+                        </li>
+                        <li data-theme="lime">
+                            <div class="lime"></div>
+                            <span>Lime</span>
+                        </li>
+                        <li data-theme="yellow">
+                            <div class="yellow"></div>
+                            <span>Yellow</span>
+                        </li>
+                        <li data-theme="amber">
+                            <div class="amber"></div>
+                            <span>Amber</span>
+                        </li>
+                        <li data-theme="orange">
+                            <div class="orange"></div>
+                            <span>Orange</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div>
+                            <span>Deep Orange</span>
+                        </li>
+                        <li data-theme="brown">
+                            <div class="brown"></div>
+                            <span>Brown</span>
+                        </li>
+                        <li data-theme="grey">
+                            <div class="grey"></div>
+                            <span>Grey</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div>
+                            <span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div>
+                            <span>Black</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2></h2>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                MAIL RATE CALCULATOR
+                                <small>Please enter the below to find services available and their rates</small>
+                            </h2>
+
+                        </div>
+                        <div class="body">
+                            <form>
+                                <div class="row clearfix">
+                                    <div class="col-md-12">
+                                        <label for="email_address">Origin</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <select class="form-control show-tick">
+                                                <option>Abu Dhabi</option>
+                                                <option>Dubai</option>
+                                                <option>Sharjah</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <select class="form-control show-tick">
+                                                <option>Abu Dhabi City</option>
+                                                <option>Al Ain</option>
+                                                <option>Delma Island</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <select class="form-control show-tick" data-live-search="true">
+                                                <option>Khalifa Street</option>
+                                                <option>Airport Road</option>
+                                                <option>Delma Street</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <label for="email_address">Destination</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <div class="switch">
+                                                <label>Local
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>International</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <select class="form-control show-tick">
+                                                <option>Dubai</option>
+                                                <option>Abu Dhabi</option>
+                                                <option>Sharjah</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <select class="form-control show-tick">
+                                                <option>Bur Dubai</option>
+                                                <option>Deira</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <select class="form-control show-tick" data-live-search="true">
+                                                <option>Al Karama</option>
+                                                <option>Airport Road</option>
+                                                <option>Al Nahda Street</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <label for="email_address">Dimension</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <div class="switch">
+                                                <label>Cms
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>Inches</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <input type="text" class="form-control">
+                                                <label class="form-label">Length</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <input type="text" class="form-control">
+                                                <label class="form-label">Width</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <input type="text" class="form-control">
+                                                <label class="form-label">Height</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <label for="email_address">Weight</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <div class="switch">
+                                                <label>gm
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>kg</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="form-group form-float">
+                                            <div class="input-group spinner" data-trigger="spinner">
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control text-center" value="1" data-rule="currency">
+                                                </div>
+                                                <span class="input-group-addon">
+                                                    <a href="javascript:;" class="spin-up" data-spin="up">
+                                                        <i class="glyphicon glyphicon-chevron-up"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="spin-down" data-spin="down">
+                                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <input type="checkbox" id="remember_me_2" class="filled-in">
+                                <label for="remember_me_2">Remember My Choice</label>
+                                <br>
+                                <button type="button" class="btn btn-primary m-t-15 waves-effect">CALCULATE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-header">
+                <h2>SERVICES</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-purple hover-zoom-effect">
+                        <div class="icon">
+                            <i class="material-icons">email</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">Sending a postcard</div>
+                            <div class="number">POSTCARD</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-pink hover-zoom-effect">
+                        <div class="icon">
+                            <i class="material-icons">receipt</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">Sending a document</div>
+                            <div class="number">DOCUMENT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-deep-orange hover-zoom-effect">
+                        <div class="icon">
+                            <i class="material-icons">book</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">Sending a packet</div>
+                            <div class="number">PACKET</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-orange hover-zoom-effect">
+                        <div class="icon">
+                            <i class="material-icons">shopping_basket</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">Sending a box</div>
+                            <div class="number">PARCEL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card mail">
+                        <div class="header bg-orange"><!-- bg-orange -->
+                                <div class="icon">
+                                        <i class="material-icons">shopping_basket</i>
+                                    </div>
+                            
+                            <h2>
+                                PARCEL
+                                <small>Sending a box</small>
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                                    <div class="panel-group" id="accordion_19" role="tablist" aria-multiselectable="true">
+
+                                        <div class="panel panel-col-grey">
+                                            <div class="panel-heading" role="tab" id="headingFour_19">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour_19" aria-expanded="false" aria-controls="collapseFour_19">
+                                                        <i class="material-icons">mail_outline</i> Premium
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFour_19" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour_19">
+                                                <div class="panel-body">
+                                                    <blockquote class="m-b-12">
+                                                        <p> An urgent door-to-door international delivery within one to three
+                                                            days to a specified address</p>
+                                                    </blockquote>
+                                                    <div class="col-sm-6">
+                                                        <div class="col-sm-12">
+                                                            <label>Features and Optional Extras:</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_2" class="filled-in" checked disabled />
+                                                            <label for="basic_checkbox_2">Registered/P.O.D</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_5" class="insurance-checkbox" />
+                                                            <label for="basic_checkbox_5">Insurance</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_4" disabled />
+                                                            <label for="basic_checkbox_3">Bulk</label>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-sm-6">
+
+                                                        <div class="col-sm-12">
+                                                            <div class="info-box">
+                                                                <div class="icon bg-grey">
+                                                                    <i class="material-icons">flight_takeoff</i>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="text">TRANSIT TIME</div>
+                                                                    <div class="number">1-3 Days</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-12">
+                                                            <div class="info-box">
+                                                                <div class="icon bg-grey">
+                                                                    <i class="material-icons">attach_money</i>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="text">TOTAL CHARGE (
+                                                                            <a class="price-breakup-link">BREAKUP</a>)</div>
+                                                                    <div class="number">AED 135.00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 mailrate-service">
+                                                        <button type="button" class="btn btn-primary waves-effect">
+                                                            <i class="material-icons">book</i>
+                                                            <span>BOOK</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-success waves-effect">
+                                                            <i class="material-icons">chat</i>
+                                                            <span>ENQUIRE</span>
+                                                        </button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-col-grey">
+                                            <div class="panel-heading" role="tab" id="headingFour_19">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour_19" aria-expanded="false" aria-controls="collapseFour_19">
+                                                        <i class="material-icons">mail_outline</i> Express
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFour_19" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour_19">
+                                                <div class="panel-body">
+                                                    <blockquote class="m-b-12">
+                                                        <p>A door-to-door international delivery within two to fix days to a
+                                                            specified address</p>
+                                                    </blockquote>
+                                                    <div class="col-sm-6">
+                                                        <div class="col-sm-12">
+                                                            <label>Features and Optional Extras:</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_2" class="filled-in" checked disabled />
+                                                            <label for="basic_checkbox_2">Registered/P.O.D</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_6" class="insurance-checkbox" />
+                                                            <label for="basic_checkbox_6">Insurance</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_4" disabled />
+                                                            <label for="basic_checkbox_3">Bulk</label>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-sm-6">
+
+                                                        <div class="col-sm-12">
+                                                            <div class="info-box">
+                                                                <div class="icon bg-grey">
+                                                                    <i class="material-icons">flight_takeoff</i>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="text">TRANSIT TIME</div>
+                                                                    <div class="number">2-5 Days</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-12">
+                                                            <div class="info-box">
+                                                                <div class="icon bg-grey">
+                                                                    <i class="material-icons">attach_money</i>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="text">TOTAL CHARGE (
+                                                                            <a class="price-breakup-link">BREAKUP</a>)</div>
+                                                                    <div class="number">AED 110.00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 mailrate-service">
+                                                        <button type="button" class="btn btn-primary waves-effect">
+                                                            <i class="material-icons">book</i>
+                                                            <span>BOOK</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-success waves-effect">
+                                                            <i class="material-icons">chat</i>
+                                                            <span>ENQUIRE</span>
+                                                        </button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-col-grey">
+                                            <div class="panel-heading" role="tab" id="headingFour_19">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour_19" aria-expanded="false" aria-controls="collapseFour_19">
+                                                        <i class="material-icons">mail_outline</i> Standard
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFour_19" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour_19">
+                                                <div class="panel-body">
+                                                    <blockquote class="m-b-12">
+                                                        <p> An economical way of sending a standard parcel from an Emirates Post
+                                                            post office to an international mail box</p>
+                                                    </blockquote>
+                                                    <div class="col-sm-6">
+                                                        <div class="col-sm-12">
+                                                            <label>Features and Optional Extras:</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_1" class="filled-in" />
+                                                            <label for="basic_checkbox_1">Registered/P.O.D</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_7" class="insurance-checkbox" class="filled-in" />
+                                                            <label for="basic_checkbox_7">Insurance</label>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <input type="checkbox" id="basic_checkbox_4" disabled />
+                                                            <label for="basic_checkbox_3">Bulk</label>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-sm-6">
+
+                                                        <div class="col-sm-12">
+                                                            <div class="info-box">
+                                                                <div class="icon bg-grey">
+                                                                    <i class="material-icons">flight_takeoff</i>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="text">TRANSIT TIME</div>
+                                                                    <div class="number">Next Day</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-12">
+                                                            <div class="info-box">
+                                                                <div class="icon bg-grey">
+                                                                    <i class="material-icons">attach_money</i>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <div class="text">TOTAL CHARGE (
+                                                                        <a class="price-breakup-link">BREAKUP</a>)</div>
+                                                                    <div class="number">AED 77.00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 mailrate-service">
+                                                        <button type="button" class="btn btn-primary waves-effect">
+                                                            <i class="material-icons">book</i>
+                                                            <span>BOOK</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-success waves-effect">
+                                                            <i class="material-icons">chat</i>
+                                                            <span>ENQUIRE</span>
+                                                        </button>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="price-breakup" style="display: none;">
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>SERVICE</th>
+                                    <th>CHARGE</th>
+                                    <th>VAT</th>
+                                    <th>TOTAL AMOUNT</th>
+                                </tr>
+                            </thead>
+                            <tfoot class="font-bold font-18">
+                                <tr>
+                                    <td scope="row">TOTAL</td>
+                                    <td>15.00</td>
+                                    <td>0.75</td>
+                                    <td>15.75</td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">BASIC</td>
+                                    <td>10.00</td>
+                                    <td>0.50</td>
+                                    <td>10.50</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">INSURANCE</td>
+                                    <td>5.00</td>
+                                    <td>0.25</td>
+                                    <td>5.25</td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--#END# DateTime Picker -->
+        </div>
+
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../../plugins/node-waves/waves.js"></script>
+
+    <!-- Autosize Plugin Js -->
+    <script src="../../plugins/autosize/autosize.js"></script>
+
+    <!-- Moment Plugin Js -->
+    <script src="../../plugins/momentjs/moment.js"></script>
+
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="../../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- SweetAlert Plugin Js -->
+    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/mailrate.js"></script>
+
+    <!-- Demo Js -->
+    <script src="../../js/demo.js"></script>
+</body>
+
+</html>
